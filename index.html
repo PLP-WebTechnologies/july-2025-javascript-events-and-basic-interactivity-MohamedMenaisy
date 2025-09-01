@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Page</title>
+</head>
+<body>
+
+  <h1>Interactive Web Page</h1>
+
+  <!--  Form Section -->
+  <section>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="username">Name:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <span class="error" id="nameError"></span><br>
+
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <span class="error" id="emailError"></span><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5"></textarea><br>
+      <span class="error" id="messageError"></span><br>
+
+      <button type="submit">Send</button>
+    </form>
+    <div id="formResult"></div>
+  </section>
+
+  <!--  Interactive Section 1: Toggle Text -->
+  <section>
+    <h2>FAQ</h2>
+    <button id="toggleFaq">Show Answer</button>
+    <p id="faqAnswer" style="display:none;">Yes! You can contact us 24/7 via the form above.</p>
+  </section>
+
+  <!--  Interactive Section 2: Live Preview -->
+  <section>
+    <h2>Live Message Preview</h2>
+    <textarea id="liveInput" placeholder="Type something here..."></textarea>
+    <p><strong>Preview:</strong> <span id="livePreview"></span></p>
+  </section>
+
+  <!--  Link Interaction -->
+  <section>
+    <h2>Need Help?</h2>
+    <a href="#" id="helpLink">Click here for support</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
